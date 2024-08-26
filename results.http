@@ -1,0 +1,60 @@
+### Create a New Author
+POST http://localhost:5000/api/authors
+Content-Type: application/json
+
+{
+  "name": "Jane Austen",
+}
+
+### Retrieve a List of Authors
+GET http://localhost:5000/api/authors
+
+### Create a New Book
+POST http://localhost:5000/api/books
+Content-Type: application/json
+
+{
+  "title": "Pride and Prejudice",
+  "author": "66cc5e1cdbe8485982011624",
+  "isbn": "9780141439518",
+  "publishedDate": "1813-01-28",
+  "copies": 10
+}
+
+
+### Retrieve a List of Books
+GET http://localhost:5000/api/books
+
+### Update a Book by ID
+PUT http://localhost:5000/api/books/66cc5f9afcfec5b03c19bcd8
+Content-Type: application/json
+
+{
+  "title": "Pride and Prejudice - Updated",
+  "author": "66cc5e1cdbe8485982011624",
+  "isbn": "9780141439518",
+  "publishedDate": "1813-01-28",
+  "copies": 15
+}
+
+
+### Delete a Book by ID
+DELETE http://localhost:5000/api/books/66cc5f9afcfec5b03c19bcd8  
+
+### Retrieve Audit Logs
+GET http://localhost:5000/api/logs
+
+### Create a New User
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+  "username": "johndoe",
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "password": "securepassword"
+}
+
+
+### Retrieve a List of Users
+GET http://localhost:5000/api/users
